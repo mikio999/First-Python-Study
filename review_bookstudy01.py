@@ -59,3 +59,20 @@ hello = "안녕하세요"
 print(hello)
 print(hello[0:2])
 hello
+
+print(len("안녕하세요"))
+students = ["mikio", "kwawkwak", "yuza", "namo"]
+grades = [1, 6, 2, 1]
+import statistics
+print(statistics.mean(grades))
+
+import random
+print(random.choice(students))
+print(len("mikio"))
+
+print("0", type(0))
+print("0.0", type(0.0))
+
+0.52273e2
+print(0.52273e2)
+print(0.52273e-2)
