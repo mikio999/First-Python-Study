@@ -76,3 +76,22 @@ print("0.0", type(0.0))
 0.52273e2
 print(0.52273e2)
 print(0.52273e-2)
+
+print(3//2)
+print(5%2)
+print(17%13)
+
+#변수형
+pi = 3.14159265
+pi
+print(pi)
+
+# 변수 = 값 -> 값을 변수에 할당한다.
+# pi = 3.14159265 -> 3.14159265를 변수 pi에 저장한다.
+
+print(pi + 2)
+print(pi - 2)
+print(pi * 2)
+print(pi / 2)
+print(pi % 2)
+print(pi * pi)
