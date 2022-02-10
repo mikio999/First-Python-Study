@@ -95,3 +95,17 @@ print(pi * 2)
 print(pi / 2)
 print(pi % 2)
 print(pi * pi)
+
+a = +10
+a = a+10
+number = 100
+number+= 10
+number+= 20
+number+= 30
+# number : 160
+
+string = "안녕하세요"
+string += "!"
+string += "내 이름은"
+string += "mikio"
+
