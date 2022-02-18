@@ -87,3 +87,14 @@ output_c = "{:15.1f}" .format(52.273)
 print(output_a)
 print(output_b)
 print(output_c)
+
+output_a = 52.0
+output_b = "{:g}" .format(output_a)
+print(output_a)
+print(output_b)
+
+a = "Hello Python Programming...!"
+a.upper()
+print(a.upper())
+a.lower()
+print(a.lower())
