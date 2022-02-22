@@ -131,3 +131,11 @@ a = "10 20 30 40 50" .split(" ")
 print(a)
 b = "20 40 60 80 100" .split()
 print(b)
+
+string = "hello"
+# string.upper()를 실행하고, string 출력하기
+string.upper()
+print("A 지점:" , string)
+
+# string.upper() 실행하기
+print("B 지점:", string.upper())
