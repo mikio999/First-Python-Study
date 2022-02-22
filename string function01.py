@@ -117,3 +117,17 @@ output_a = "안녕안녕하세요" .find("안녕")
 print(output_a)
 output_b = "안녕안녕하세요" .rfind("안녕")
 print(output_b)
+
+output_c = "제이름은미키오미키오입니다" .find("미키오")
+output_d = "제이름은미키오미키오입니다" .rfind("미키오")
+print(output_c)
+print(output_d)
+
+print("안녕" in "안녕하세요")
+print("잘자" in "안녕하세요")
+
+print()
+a = "10 20 30 40 50" .split(" ")
+print(a)
+b = "20 40 60 80 100" .split()
+print(b)
