@@ -139,3 +139,11 @@ print("A 지점:" , string)
 
 # string.upper() 실행하기
 print("B 지점:", string.upper())
+
+#format() 함수
+a = "{} {}" .format(52, 273)
+b = "{} {}" .format(52,type(273))
+print(a)
+print(b)
+d = "{}" .format(52,273)
+print(d)
