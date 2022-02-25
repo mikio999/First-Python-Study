@@ -147,3 +147,8 @@ print(a)
 print(b)
 d = "{}" .format(52,273)
 print(d)
+
+print()
+print(10==100)
+
+print(3*4 == 12)
