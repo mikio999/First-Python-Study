@@ -99,3 +99,26 @@ if id1 == 'vip' or id2 == 'admin' :
 
 if id2 == 'admin' and grade == 'platinum':
     print('최상위 관리자')
+
+# 중첩 조건문
+grade = 'A'
+total = 88
+
+if grade == 'A' :
+    if total >= 90:
+        print('장학금 100%')
+    elif total >= 80:
+        print('장학금 80%')
+    else:
+        print('장학금 없음')
+
+q = [10, 20, 30]
+w = {70, 80, 90,100}
+e = {"name" : "Lee", "city" : "Seoul", "grade" : "A"}
+r = (10, 12, 14)
+
+print(15 in q)
+print(90 in w)
+print(12 not in r)
+print("Seoul" in e.values())
+print("city" not in e.keys())
