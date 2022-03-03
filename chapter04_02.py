@@ -98,7 +98,7 @@ for v in Lt:
     if type(v) is bool:
         continue
     print("current type:",v, type(v))
-    print("multiply by 2", v*3)
+    print("multiply by 3", v*3)
 
 # for - else
 
@@ -115,7 +115,7 @@ else:
 
 for i in range(2,10):
     for j in range(1, 10):
-        print('{:4d}' .format(i*j), end='')
+        print('{:4d}' .format(i*j), end =" ")
     print()
 
 # 변환 예제
