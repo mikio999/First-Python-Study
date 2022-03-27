@@ -29,8 +29,8 @@ def func_mul(x):
     y1 = x * 10
     y2 = x * 20
     y3 = x * 30
-    return y1, y2, y3
-
+    return (y1, y2, y3)
+h = func_mul(10)
 x, y, z = func_mul(10)
 
 print(x, y, z)
