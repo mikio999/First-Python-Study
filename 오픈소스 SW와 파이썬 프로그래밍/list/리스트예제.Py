@@ -125,3 +125,52 @@ print(result2d_B)
 print(result2d_C)
 print(result2d_D)
 print(result2d_E)
+
+# 리스트 복사하기: 슬라이싱 활용
+numbers = [10,20,30,40,50,60,70,80,90]
+print(numbers[:3])
+print(numbers[3:])
+new_numbers = numbers[:] # 얕은 복사
+
+# 리스트 함축
+# [수식 for (변수 in 리스트) if (조건)]
+squares = [x*x for x in range(10)]
+print(squares)
+
+squares1 = []
+for i in range(10):
+    squares1.append(i**2)
+print(squares1)
+
+squares2 = [x**2 for x in range(10)]
+print(squares)
+
+# 리스트 함축에는 if를 사용하여 조건이 추가될 수 있다.
+squares = [x*x for x in range(10) if x%2 == 0]
+print(squares)
+# 다양한 리스트 함축
+prices = [135, - 545, 922, 356, -992, 217]
+mprices = [i if i>0 else 0 for i in prices]
+print(mprices)
+
+words = ["All", "good", "things", "must", "come", "to", "an", "end"]
+letters = [w[0] for w in words]
+print(letters)
+
+numbers = [x+y for x in ['a', 'b', 'c'] for y in ['x', 'y', 'z']]
+print(numbers)
+
+# 조건 표현식
+# max_value = (x if x>y else y)
+price = int(input("price 입력"))
+shipping_cost = (0 if price >= 20000 else 3000)
+print(shipping_cost)
+
+x = int(input("x값 입력"))
+y = int(input("y값 입력"))
+absolute_value = (x if x>0 else -x)
+max_value = (x if x>y else y)
+min_value = (x if x<y else y)
+print(absolute_value)
+print(max_value)
+print(min_value)
