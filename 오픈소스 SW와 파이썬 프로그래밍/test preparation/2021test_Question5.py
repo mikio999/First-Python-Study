@@ -36,3 +36,36 @@ print(final_name)
 
 for name in final_name:
     print(name)
+
+# 함수식
+import random
+
+def assignName(sn):
+    female_name = ['Alice', 'Bianca', 'Cindy', 'Dorothy','Emily', 'Hera', 'Isabel', 'Jane', 'Julia', 'Lisa', 'Monica']
+    male_name = ['Alex', 'Bradley', 'Charles', 'Eric', 'George', 'Harry', 'Ivan', 'James', 'Kevin', 'Lucas', 'Mickey', 'Sam']
+    
+    female_name_length = len(female_name)
+    male_name_length = len(male_name)
+    if sn%2:
+        return female_name[int(sn*random.random()) % female_name_length]
+        
+    else:
+        return male_name[int(sn*random.random()) % male_name_length]
+        
+name_chosen = []
+
+names={}
+#random_serial_list = random.sample(range(100,200),6)
+random_serial_list = [100,101,102,103,104,105]
+
+for random_number in random_serial_list:
+    name_to_be_assigned = assignName(random_number)
+    while (name_to_be_assigned in name_chosen):
+        name_to_be_assigned = assignName(random_number)
+    
+    names[random_number]=name_to_be_assigned
+    
+
+print(sorted(names.items()))
+reverse_dic = {value : key for key,value in names.items()}
+print(sorted(reverse_dic.items()))
