@@ -16,3 +16,46 @@ try:
 except Exception as exception:
     print("type(exception):", type(exception))
     print("exception:",exception)
+# 예외 구분하기
+list_number = [52,273,32,72,100]
+try:
+    number_input = int(input('정수 입력>'))
+    print("{}번째 요소 : {}".format(number_input, list_number[number_input]))
+except ValueError:
+    print("정수를 입력해 주세요!")
+except IndexError:
+    print("리스트의 인덱스를 벗어났어요!")
+
+# 예외 구문과 예외 객체
+list_number = [52,273,32,72,100]
+try:
+    number_input = int(input('정수 입력>'))
+    print("{}번째 요소 : {}".format(number_input, list_number[number_input]))
+except ValueError as exception:
+    print("정수를 입력해 주세요!")
+    print("exception:", exception)
+except IndexError as exception:
+    print("리스트의 인덱스를 벗어났어요!")
+    print("exception:", exception)
+    # 모든 예외 잡기
+list_number = [52,273,32,72,100]
+try:
+    number_input = int(input('정수 입력>'))
+    print("{}번째 요소 : {}".format(number_input, list_number[number_input]))
+    예외.발생해주세요()
+except ValueError as exception:
+    print("정수를 입력해 주세요!")
+    print(type(exception), exception)
+except IndexError as exception:
+    print("리스트의 인덱스를 벗어났어요!")
+    print(type(exception), exception)
+except Exception as exception:
+    print("미리 파악하지 못한 예외가 발생했습니다.")
+    print(type(exception), exception)
+# 아직 구현되지 않은 부분에서 강제로 예외 발생시키기
+number = input("정수 입력>")
+number = int(number)
+if number > 0 :
+    raise NotImplementedError
+else:
+    raise NotImplementedError
