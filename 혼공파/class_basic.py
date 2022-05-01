@@ -77,3 +77,17 @@ students = [
 print("이름", "총점", "평균", sep ="\t")
 for student in students:
     print(student_to_string(student))
+
+class Student:
+    pass
+
+student = Student()
+
+students = [
+    Student(),
+    Student(),
+    Student(),
+    Student(),
+    Student(),
+    Student()
+]
