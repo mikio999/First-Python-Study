@@ -23,3 +23,33 @@ class Counter:
 a = Counter(0)
 b = Counter(100)
 print(a,b)
+
+# Counter class 2
+class Counter:
+    def __init__(self, initValue=0):
+        self.count = initValue
+    def reset(self):
+        self.count = 0
+    def increment(self):
+        self.count += 1
+    def get(self):
+        return self.count
+
+# method define
+class Counter:
+    def __init__(self, initValue = 0):
+        self.count = initValue
+
+class Counter:
+    def __init__(self, initValue=0):
+        self.count = initValue
+    def reset(self):
+        self.count = 0
+    def increment(self):
+        self.count += 1
+    def get(self):
+        return self.count
+a = Counter(100)
+a.reset()
+a.increment()
+print("카운터 a의 값은", a.get())
