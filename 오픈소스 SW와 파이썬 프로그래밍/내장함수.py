@@ -46,3 +46,32 @@ def area_of_circle(radius):
 """
 exec(statements)
 print(area_of_circle(5))
+
+# float() 함수
+#str = input("실수를 입력하시오:")
+#print(str)
+#value = float(str)
+#print(value)
+
+x = 17
+print(hex(x)) #16진수
+print(oct(x)) #8진수
+
+# max() 함수
+values = [1,2,3,4,5]
+print(max(values))
+print(min(values))
+
+values ={"d":1, "c":2, "b":3, "a":4}
+print(max(values))
+print(min(values))
+
+# map() 함수
+def square(n):
+    return n*n
+
+mylist = [1,2,3,4,5]
+result = list(map(square, mylist))
+print(result)
+
+# filter() 함수
