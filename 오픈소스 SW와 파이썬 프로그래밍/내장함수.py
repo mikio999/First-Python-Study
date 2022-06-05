@@ -75,3 +75,16 @@ result = list(map(square, mylist))
 print(result)
 
 # filter() 함수
+def myfilter(x):
+    return x>3
+result = filter( myfilter, (1,2,3,4,5,6))
+print(list(result))
+
+# 정렬
+myList0 = [4,2,3,5,1]
+myList1 = sorted(myList0)
+print(myList0)
+print(myList1)
+myList2 = [4,2,3,5,1]
+myList2.sort()
+print(myList2)
