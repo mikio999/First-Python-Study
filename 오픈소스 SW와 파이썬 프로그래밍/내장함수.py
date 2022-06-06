@@ -88,3 +88,14 @@ print(myList1)
 myList2 = [4,2,3,5,1]
 myList2.sort()
 print(myList2)
+
+# key 매개변수
+print(sorted("The health know not of their health, but only the sick".split(),
+key=str.lower))
+
+students = [
+    ('Park',4.1,20000777),
+    ('Hans', 4.0, 20000333),
+    ('Liza', 4.3, 20000111),
+]
+print(sorted(students, key=lambda s:s[2]))
