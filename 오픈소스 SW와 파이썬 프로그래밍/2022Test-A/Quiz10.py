@@ -1,0 +1,8 @@
+#f=open("proverbs.txt");print(f.readline())
+#f=open("proverbs.txt");print(f.read())
+print("1")
+f1 = open("proverbs.txt"); lines = f1.readlines(); f2 = open("test.txt", "w"); f2.writelines(lines); f2.close(); f3 = open("test.txt"); print( f3.read() )
+print("2")
+f1 = open("proverbs.txt"); lines = f1.readlines(); f2 = open("test.txt", "w"); f2.writelines(lines); f3 = open("test.txt"); print( f3.read() )
+print("3")
+f1 = open("proverbs.txt"); lines = f1.read(); f2 = open("test.txt", "w"); f2.write(lines); f2.flush(); f3 = open("test.txt"); print( f3.read() )
