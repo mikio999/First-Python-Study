@@ -120,13 +120,13 @@ print()
 # 예외 발생 : raise
 # raise 키워드로 예외 직접 발생
 
-try:
-    a = 'Park'
-    if a == 'Kim':
-        print('OK! Pass!')
-    else:
-        raise ValueError
-except ValueError:
-    print('Occurred! Exception!')
-else:
-    print('Ok! else!')
+# try:
+#     a = 'Park'
+#     if a == 'Kim':
+#         print('OK! Pass!')
+#     else:
+#         raise ValueError
+# except ValueError:
+#     print('Occurred! Exception!')
+# else:
+#     print('Ok! else!')
